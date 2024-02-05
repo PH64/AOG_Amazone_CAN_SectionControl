@@ -24,6 +24,6 @@ Précisions for Amatron 3 et 4 :
 Ces consoles étant Isobus, Aog ne récupère pas les informations de marquage du travail lorsque le pulvérisateur est piloté depuis l'amatron 3 ou 4. 
 Il faut donc utiliser AOG pour contrôler ces Amatrons, en mode manuel ou automatique.  
 Le sketch 1, n'est pas utilisé sur Amatron 3 et 4,  
-Dans le sketch 2, les commandes de tronçons sont font uniquement sur AOG, 
+Dans le sketch 2, les commandes de tronçons sont font uniquement sur AOG,  
 Dans le sketck 3, bouton appuyé, les commandes de tronçons sont font uniquement sur AOG, bouton non appuyé l'amatron 3 ou 4 commande les tronçons mais AOG ne récupère pas l'information de marquage
 
