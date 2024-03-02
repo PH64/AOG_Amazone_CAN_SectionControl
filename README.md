@@ -1,12 +1,6 @@
 # AOG_Amazone_CAN_SectionControl
-SectionControl based on CAN Messages for AgOpen GPS and Amazone machines
-
-THe sketches are based on the Machine_USB_v5 Sketch from AGO... the following sketches unfortunately only support USB (sorry for that). When you need UDP -> copy code into Machine_UDP sketch
-3 Sketches:
- 1. This sketch supports marking of sections into AGO -> use your sprayer as usual and AGO marking will be triggered by sections of your sprayer
- 2. This sketch supports AutoSection control from AGO to your sprayer -> choose Autosection Mode in AGO and the sections of Amazone will be automatically changed
- 3. This sketch supports both -> you need a physical switch to change between the two modes (marking and autosection control)
-
+SectionControl based on CAN Messages for AgOpen GPS and Amazone machines by Alexb933 and Valentin.
+The sketches are based on the Machine_USB_v5 Sketch from AGO... the following sketches unfortunately only support USB (sorry for that). When you need UDP -> copy code into Machine_UDP sketch
 See attached a components list and schematic. Also an excel file which explains the CAN Message structure.
 You can use only AMATRON, or with AMACLICK and also with Joystick at the same time. Be careful when you use AMACLICK in AUtosection Mode -> turn off AMACLICK or remove it.
 Attention: when using the CANBUS shield and the optional physical switch -> PIN 2,9,19,17 are not available
@@ -15,15 +9,9 @@ Be careful when using CANBUS (use the right Pins and do not current them!). Use 
 At the moment November 2023 the "marking mode" (Sketch 1) only supports until 7 Sections because the CAN Code for upper sections is unknown.
 Please feel free to change the code or adapt to your situation.
 
-THANKS a lot to Valentin for support :-)
- 
- 
-  
-Précisions for Amatron 3 et 4 :   
+Precisions for Amatron 3 et 4 isobus:   
+AOG control sections with Amatron 3 and 4 in manual mode ou automatic mode.   
+- in "Machine_USB_v5_CAN_AMATRON_SectionControl", section control works only on AOG,  
+- in "Machine_USB_v5_CAN_AMATRON", button pressed, section control works only on AOG, button unpressed, amatron 3 or 4 controls the sections but AOG does not retrieve the marking information
 
-Ces consoles étant Isobus, Aog ne récupère pas les informations de marquage du travail lorsque le pulvérisateur est piloté depuis l'amatron 3 ou 4. 
-Il faut donc utiliser AOG pour contrôler ces Amatrons, en mode manuel ou automatique.  
-- Le sketch 1, n'est pas utilisé sur Amatron 3 et 4,  
-- dans le sketch 2, les commandes de tronçons sont font uniquement sur AOG,  
-- dans le sketck 3, bouton appuyé, les commandes de tronçons sont font uniquement sur AOG, bouton non appuyé l'amatron 3 ou 4 commande les tronçons mais AOG ne récupère pas l'information de marquage
-
+Thanks to Alexb933 and Valentin for the code
