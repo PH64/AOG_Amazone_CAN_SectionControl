@@ -3,6 +3,7 @@ SectionControl based on CAN Messages for AgOpen GPS and Amazone machines by Alex
 
 The sketches are based on the Machine_USB_v5 Sketch from AGO... 
 Also an excel file which explains the CAN Message structure.
+
 You can use only AMATRON, or with AMACLICK and also with Joystick at the same time. Be careful when you use AMACLICK in AUtosection Mode -> turn off AMACLICK or remove it.
 Attention: when using the CANBUS shield and the optional physical switch -> PIN 2,9,19,17 are not available
 
